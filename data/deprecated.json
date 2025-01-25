@@ -236,6 +236,16 @@
     "replace": {"barrier": "fence", "fence_type": "railing"}
   },
   {
+  "old": {
+    "highway": "cycleway",
+    "cycleway": "track"
+  },
+  "replace": {
+    "cycleway": null
+  },
+  "description": "Avoid using 'cycleway=track' on 'highway=cycleway' as it is redundant. A 'highway=cycleway' already implies a dedicated cycleway. See https://wiki.openstreetmap.org/wiki/Tag:cycleway=track#Do_not_use_cycleway=track_+_highway=cycleway."
+},
+  {
     "old": {"barrier": "wall", "type": "noise_barrier"},
     "replace": {"barrier": "wall", "wall": "noise_barrier"}
   },
